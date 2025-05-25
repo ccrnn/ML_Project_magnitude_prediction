@@ -124,7 +124,7 @@ Bu proje, makine öğrenmesi alanında ilk uygulamalarımdan biridir. Bir fen bi
 # Linkler
 Veri Seti: https://www.kaggle.com/datasets/rushikesh6548/earthquake-data-2010-2023-latest 
 
-Kaggle Notebook:
+Kaggle Notebook: https://www.kaggle.com/code/cerenahan/ml-project-magnitude-prediction 
 
 # Dipnot
 Bu projeyi geliştirirken makine öğrenmesi süreçlerini daha iyi anlamak amacıyla Google Gemini yapay zekâ asistanından rehberlik için destek aldım. Yapay zekâdan aldığım yardım; her adımın mantığını öğrenmemi, veri analizi ve modelleme sürecini daha iyi kavramamı sağladı. Projede tüm kararları kendim verdim, yorumladım ve uygulamaları bizzat gerçekleştirdim. Yapay zekâ desteğini öğrenme sürecimi güçlendiren bir kaynak olarak kullandım. Etik kurallara uygun bir çalışma olması açısından dipnotta bu desteği açıklamak istedim.
