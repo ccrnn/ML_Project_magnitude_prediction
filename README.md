@@ -48,7 +48,7 @@ Veri setinin gerçek dünya verisi olması, bilimsel olarak anlamlı ve güncel 
 
 * **5. ADIM: Özellik Mühendisliği ve Seçimi**
 * 5.1. Kategorik Özelliklerin İşlenmesi (One-Hot Encoding)
-* 5.2. Yüksek Kardinaliteli Kategorik Özelliklerin İşlenmesi
+* 5.2. Yüksek Sayıda Benzersiz Değer İçeren Kategorik Özelliklerin İşlenmesi
 * 5.3. Eksik Değerlerin ve Gereksiz Sütunların Son Kez İşlenmesi
 
 *Bu adımda, modellemeye uygun hale getirmek için kategorik değişkenler one-hot encoding yöntemiyle sayısal forma dönüştürüldü. Yüksek benzersiz değer içeren değişkenlerde anlamlı gruplamalar yapılarak veri boyutu kontrol altında tutuldu. Ayrıca, eksik değerler son kez gözden geçirilip uygun şekilde temizlendi ve modellemeye katkı sağlamayan sütunlar veri setinden çıkarıldı.*
