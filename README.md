@@ -101,9 +101,8 @@ Bu projenin amacı; 2010-2023 yılları arasında meydana gelen küresel deprem 
 
 **_Gerçek Dünyada Model Ne İşe Yarayabilir?_**
 
+Model, geçmiş verilerden yola çıkarak deprem büyüklüğü tahmini yapabilmektedir. Ancak dikkat edilmesi gereken nokta *model, deprem olup olmayacağını öngören bir sistem* olmamasıdır. Yani şu tarihte şurada deprem olacak gibi bir tahmin yapamaz. Sadece deprem verileri mevcutsa depremin büyüklüğünü öngörebilir. Bu özelliğiyle bilimsel jeofiziksel tahmin sistemlerinin yerini almaz ancak onları destekleyebilir. Ayrıca büyüklük tahminlerinde yola çıkarak afet risk yönetimi konusunda da destek sağlayabilir. Ör: modelin belirli bir bölgedeki derinlik,istasyon sayısı, sismik boşluk (özellikler) gibi verilerden yola çıkarak tahmin ettiği büyüklük değerleri ile o bölgenin potansiyel risk düzeyinin hesaplanmasına katkı sağlayabilir. Buna göre halk bilinçlendirmesi ve şehir planlaması yapılabilir.
 
-
- 
 
 ## Gelecek Çalışmalar
 *Proje İçin Gelecek Çalışmalar*
@@ -116,7 +115,7 @@ Bu projenin amacı; 2010-2023 yılları arasında meydana gelen küresel deprem 
 * Veri setine yeni özellikler dahil edilebilr ve modelin daha doğru tahminler yapması sağlanabilir.
 
 *Kendi ML Sürecim İçin Gelecek Çalışmalar*
-Bu proje, makine öğrenmesi alanında ilk uygulamalarımdan biridir. İleride daha ileri düzey projeler geliştirerek özellikle afet teknolojileri, sürdürülebilir yaşam ve veri bilimi alanlarında uzmanlaşmak istiyorum. Bu süreçte Python, veri mühendisliği, API entegrasyonu ve yapay zekâ uygulamaları gibi teknolojilere olan ilgimi derinleştirmeyi hedefliyorum.
+Bu proje, makine öğrenmesi alanında ilk uygulamalarımdan biridir. Bir fen bilgisi öğretmeni olarak eğitimde yapay zeka ve makine öğrenmesi gibi alanların giderek önem kazandığının farkındayım. Bu nedenle gerek yüksek lisans sürecimde gerekse de öğretmenlik hayatımda bu teknolojiler üzerinde teknik bilgi kazanmakla birlikte bu teknolojilerin eğitimde nasıl kullanılabileceğini anlamaya çalışıyorum. Çünkü gelecekte bu teknolojiler iş dünyasından gündelik hayat kadar bir çok noktada etkili olacak ve bu dünyaya hazırlanacak bireylerin yetiştirilmesinde ise öğretmenlerin rolü son derece kritiktir. Öğretmenlerin, öğrencilerini yalnızca mevcut bilgiyle değil, aynı zamanda geleceğin teknolojileriyle de donatabilmesi için bu sistemleri anlaması ve mümkünse eğitim süreçlerine entegre edebilmesi gerektiğini düşünüyorum. İleride daha ileri düzey projeler geliştirerek özellikle kişiselleşitirilmiş eğitim araçları; öğrenme stili veya konu başlı başarı tahmini gibi eğitimle teknolojinin buluştuğu alanlarda uzmanlaşmak istiyorum. Bu bootcamp sürecinde makine öğrenmesi, derin öğrenme ve veri mühendisliği ve yapay zekâ uygulamaları gibi teknolojilere olan ilgim daha da derinleşti. Çalışmalarıma bu alanda devam ederek hem teknik bilgimi geliştirmeyi hem de bu teknolojileri eğitim ortamlarına entegre edebilecek yenilikçi çözümler üretmeyi hedefliyorum.
 
 
 # Linkler
@@ -126,7 +125,3 @@ Kaggle Notebook:
 
 # Dipnot
 Bu projeyi geliştirirken makine öğrenmesi süreçlerini daha iyi anlamak amacıyla Google Gemini yapay zekâ asistanından rehberlik için destek aldım. Yapay zekâdan aldığım yardım; her adımın mantığını öğrenmemi, veri analizi ve modelleme sürecini daha iyi kavramamı sağladı. Projede tüm kararları kendim verdim, yorumladım ve uygulamaları bizzat gerçekleştirdim. Yapay zekâ desteğini öğrenme sürecimi güçlendiren bir kaynak olarak kullandım. Etik kurallara uygun bir çalışma olması açısından dipnotta bu desteği açıklamak istedim.
-
-
-
-
