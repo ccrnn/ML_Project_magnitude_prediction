@@ -26,6 +26,9 @@ Veri setinin gerçek dünya verisi olması, bilimsel olarak anlamlı ve güncel 
 * **2.ADIM: Eksik Değerlerin İncelenmesi ve Temizliği**
 * 2.1.Eksik Değerlerin Tespiti
 * 2.2.Eksik Değerler İçin Strateji Belirlenmesi ve Uygulama
+
+*Veri setindeki eksik değerler detaylı şekilde incelendi. Eksik verilerin yoğun olduğu sütunlar belirlendi ve sıralandı. Bu sütunlar için uygun stratejiler geliştirildi. Eksik değerler için tercih edilen yöntem doldurma oldu. Sayısal sütunlardaki eksik veriler medyan, kategorik sütunlardaki eksik veriler mod ile dolduruldu.Bir sütun haricinde (nst sütunu) diğer sütunlarda eksik değer yüzdesi çok yüksek olmadığı için doldurma yöntemi tercih edildi. En çok eksik değer sahip sütunun silinmeme nedeni ise özelliği nedeniyle hedef değişkenin tahminini etkileyebilecek olmasıydı.*
+
 * **3.ADIM: Veri Tiplerinin Dönüştürülmesi**
 * 3.1.time ve uptated Sütunlarını datetime Formatına Çevrilmesi
 * 3.2.time sütunundan yeni zamansal özellikler türetme
