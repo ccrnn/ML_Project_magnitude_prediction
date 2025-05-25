@@ -60,14 +60,15 @@ Veri setinin gerçek dünya verisi olması, bilimsel olarak anlamlı ve güncel 
 *Bu adımda, veri seti eğitim ve test olarak 80/20 oranında bölündü. Random Forest Regressor modeli ile temel bir eğitim gerçekleştirildi ve performans metrikleri hesaplandı. Ardından RandomizedSearchCV yöntemiyle hiperparametre optimizasyonu yapılarak modelin başarısı artırıldı. Son olarak optimize edilen model MAE, MSE, RMSE ve R² skorları ile değerlendirildi.*
 
 **Model Seçim Aşaması**
+
 4 farklı model proje için test edilmiştir. Bunlar; `Linear Regression, Decision Tree, LightGBM ve Random Forest.` Daha sonra modellerin performans metrikleri değerlendirilmişitr. Ayrıca çapraz doğrulama (5Fold CV) da uygulanmıştır. 
 
 (5Fold CV) Çapraz doğrulama sonucu RMSE değerleri şu şekildedir: Linear Regression: 0.2929, Decision Tree:0.3203, LightGBM:0.2360 ve Random Forest:0.2292. En düşük RMSE değeri Random Forest Regressor’a aittir. 
 Sonuç olarak performans açısından en başırılı model Random Forest olmuştur ve projeye onunla devam edilmiştir.
 
-|Modeller| Fiyat   | Adet  |
-| --|:-------:| -----:|
-| Linear Regression | 1000TL  | 1     |
-| Decision Tree | 100TL   | 10    |
-| LightGBM | 1TL     | 1000  |
-| Random Forest | 1TL     | 1000  |
+|Modeller| RMSE   | MAE  |MAE  |
+| --|:-------:| -----:|-----:|
+| Linear Regression | 1000TL  | 1     |1     |
+| Decision Tree | 100TL   | 10    |1     |
+| LightGBM | 1TL     | 1000  |1     |
+| Random Forest | 1TL     | 1000  |1     |
