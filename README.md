@@ -20,7 +20,9 @@ Veri setinin gerçek dünya verisi olması, bilimsel olarak anlamlı ve güncel 
 * **1.ADIM: Veri Setini Hazırlama ve Genel Bakış**
 * 1.1.Gerekli Kütüphanelerin ve Veri Setinin Yüklenmesi
 * 1.2.Veri Setine Genel Bakış(Temel EDA/Nümerik EDA)
--Bu adımda, projede kullanılacak kütüphaneler yüklendi ve veri seti içe aktarıldı. Ardından temel istatistiksel incelemeler (`head`, `info`, `describe`) yapılarak veri setinin yapısı, sütun türleri, eksik değer durumu ve özet istatistikleri analiz edildi.
+
+*Bu adımda, projede kullanılacak kütüphaneler yüklendi ve veri seti içe aktarıldı. Ardından temel istatistiksel incelemeler (`head`, `info`, `describe`) yapılarak veri setinin yapısı, sütun türleri, eksik değer durumu ve özet istatistikleri analiz edildi.*
+
 * **2.ADIM: Eksik Değerlerin İncelenmesi ve Temizliği**
 * 2.1.Eksik Değerlerin Tespiti
 * 2.2.Eksik Değerler İçin Strateji Belirlenmesi ve Uygulama
