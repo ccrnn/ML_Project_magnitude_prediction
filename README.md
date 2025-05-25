@@ -73,7 +73,7 @@ Veri setinin gerçek dünya verisi olması, bilimsel olarak anlamlı ve güncel 
 
 -Random Forest, en düşük RMSE ve MAE değerlerine ve en yüksek R2 skoruna (%90.58) sahiptir Bu, modelin veri setindeki karmaşık ilişkileri yakalamada çok başarılı olduğunu göstermektedir.
 
--Çapraz doğrulama (5Fold CV) sonucu RMSE değerleri şu şekildedir: Linear Regression: 0.2929, Decision Tree:0.3203, LightGBM:0.2360 ve Random Forest:0.2292. En düşük RMSE değeri Random Forest Regressor’a aittir. 
+-Çapraz doğrulama (5Fold CV) sonucu RMSE değerlerinde ise en düşük RMSE değeri Random Forest Regressor’a aittir. 
 
 **Sonuç olarak performans açısından en başırılı model Random Forest olmuştur ve projeye onunla devam edilmiştir.**
 
@@ -83,10 +83,12 @@ Random Forest modelinin optimize önesi ve sonrası metriklerinin karşılaştı
 | Metrik   | Optimize Edilmeden | Optimize Edildikten Sonra | Değişim  | Yorumu                      |
 | -------- | ------------------ | ------------------------- | -------- | --------------------------- |
 | *RMSE* | 0.1973             | 0.1963                    | ↓ 0.0010 | Hata biraz azaldı           |
-| *MAE*  | 0.1344             | 0.1336                    | ↓ 0.0008 | Ortalama mutlak hata azaldı |
+| *MAE*  | 0.1344             | 0.1336                    | ↓ 0.0008 | Ortalama mutlak hata  azaldı |
 | *MSE*  | 0.0389             | 0.0385                    | ↓ 0.0004 | Kareli hata da azaldı       |
 | *R²*   | 0.9058             | 0.9068                    | ↑ 0.0010 | Modelin açıklama gücü arttı |
 
+* Optimize sonrasında modelin hataları hafifçe azaldı ve R2 skoru yani modelin doğru tahmin edebilme oranı yükseldi.
+* Model optimize öncesinde de iyi bir performans gösteriyordu. Ancak optimize sonrası artık deprem büyüklüğü değerlerindeki değişimin %90.68 ni açıklayabiliyor. Yani gerçek deprem büyüklüklerine çok yakın sonuçlar üretiyor ve daha büyük ölçüde doğru tahmin ediyor. Optimize soncunda küçük ama pozitif bir iyileşme olmuştur. Modelin açıklayıcığı arttı ve daha dengeli hale geldi.
 
 
 
