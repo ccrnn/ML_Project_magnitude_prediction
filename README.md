@@ -63,12 +63,16 @@ Veri setinin gerçek dünya verisi olması, bilimsel olarak anlamlı ve güncel 
 
 4 farklı model proje için test edilmiştir. Bunlar; `Linear Regression, Decision Tree, LightGBM ve Random Forest.` Daha sonra modellerin performans metrikleri değerlendirilmişitr. Ayrıca çapraz doğrulama (5Fold CV) da uygulanmıştır. 
 
-(5Fold CV) Çapraz doğrulama sonucu RMSE değerleri şu şekildedir: Linear Regression: 0.2929, Decision Tree:0.3203, LightGBM:0.2360 ve Random Forest:0.2292. En düşük RMSE değeri Random Forest Regressor’a aittir. 
-Sonuç olarak performans açısından en başırılı model Random Forest olmuştur ve projeye onunla devam edilmiştir.
 
-| Modeller | RMSE | MAE | R2 Score |
-| --|:-------:| -----:|-----:|
-| Linear Regression | 0.2716 | 0.2029 | 0.8216 |
-| Decision Tree | 0.2829 | 0.1847 | 0.8064 |
-| LightGBM | 0.2106 | 0.1521 | 0.8928 |
-| Random Forest | 0.1973 | 0.1344 | 0.9058 |
+| Modeller | RMSE | MAE | R2 Score | Çapraz Doğrulama (5Fold CV) Sonucu RMSE |
+| --|:-------:| -----:|-----:|-----:|
+| Linear Regression | 0.2716 | 0.2029 | 0.8216 | 0.2929 |
+| Decision Tree | 0.2829 | 0.1847 | 0.8064 | 0.3203 |
+| LightGBM | 0.2106 | 0.1521 | 0.8928 | 0.2360 |
+| Random Forest | 0.1973 | 0.1344 | 0.9058 | 0.2292 |
+
+-Random Forest, en düşük RMSE ve MAE değerlerine ve en yüksek R2 skoruna (%90.58) sahiptir Bu, modelin veri setindeki karmaşık ilişkileri yakalamada çok başarılı olduğunu göstermektedir.
+
+-Çapraz doğrulama (5Fold CV) sonucu RMSE değerleri şu şekildedir: Linear Regression: 0.2929, Decision Tree:0.3203, LightGBM:0.2360 ve Random Forest:0.2292. En düşük RMSE değeri Random Forest Regressor’a aittir. 
+
+**Sonuç olarak performans açısından en başırılı model Random Forest olmuştur ve projeye onunla devam edilmiştir.**
