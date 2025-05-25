@@ -27,24 +27,34 @@ Veri setinin gerçek dünya verisi olması, bilimsel olarak anlamlı ve güncel 
 * 2.1.Eksik Değerlerin Tespiti
 * 2.2.Eksik Değerler İçin Strateji Belirlenmesi ve Uygulama
 
-*Veri setindeki eksik değerler detaylı şekilde incelendi. Eksik verilerin yoğun olduğu sütunlar belirlendi ve sıralandı. Bu sütunlar için uygun stratejiler geliştirildi. Eksik değerler için tercih edilen yöntem doldurma oldu. Sayısal sütunlardaki eksik veriler medyan, kategorik sütunlardaki eksik veriler mod ile dolduruldu.Bir sütun haricinde (nst sütunu) diğer sütunlarda eksik değer yüzdesi çok yüksek olmadığı için doldurma yöntemi tercih edildi. En çok eksik değer sahip sütunun silinmeme nedeni ise özelliği nedeniyle hedef değişkenin tahminini etkileyebilecek olmasıydı.*
+*Bu adımda, veri setindeki eksik değerler detaylı şekilde incelendi. Eksik verilerin yoğun olduğu sütunlar belirlendi ve sıralandı. Bu sütunlar için uygun stratejiler geliştirildi. Eksik değerler için tercih edilen yöntem doldurma oldu. Sayısal sütunlardaki eksik veriler medyan, kategorik sütunlardaki eksik veriler mod ile dolduruldu.Bir sütun haricinde (nst sütunu) diğer sütunlarda eksik değer yüzdesi çok yüksek olmadığı için doldurma yöntemi tercih edildi. En çok eksik değer sahip sütunun silinmeme nedeni ise özelliği nedeniyle hedef değişkenin tahminini etkileyebilecek olmasıydı.*
 
 * **3.ADIM: Veri Tiplerinin Dönüştürülmesi**
 * 3.1.time ve uptated Sütunlarını datetime Formatına Çevrilmesi
 * 3.2.time sütunundan yeni zamansal özellikler türetme
+
+*Bu adımda, zamanla ilgili `time` ve `updated` sütunları uygun analizler yapılabilmesi için `datetime` formatına dönüştürüldü. Ardından `time` sütunundan yıl, ay, gün, saat gibi yeni zamansal değişkenler türetilerek veri setine anlamlı özellikler eklendi.*
+
 * **4. ADIM: Detaylı Keşifsel Veri Analizi (EDA) ve Görselleştirmeler**
 * 4.1.Hedef Değişken (mag) Dağılımı
 * 4.2.Coğrafi Dağılım Analizi
 * 4.3.Zaman Bazlı Özelliklerin mag ile İlişkisi
 * 4.4.Sayısal Özellikler Arası Korelasyon Analizi
 * 4.5.Kategorik Özelliklerin Analizi
+
+* Bu adımda, hedef değişken olan `mag` (deprem büyüklüğü) dağılımı incelendi ve coğrafi konumlara göre dünya haritası üzerinde görselleştirildi. Zaman bazlı özellikler (yıl, ay, saat) ile büyüklük arasındaki ilişkiler analiz edildi. Sayısal değişkenler arası korelasyon matrisiyle ilişkiler belirlendi. Son olarak kategorik değişkenlerin `mag` üzerindeki etkileri incelenerek veri yapısı daha iyi anlaşıldı.
+
 * **5. ADIM: Özellik Mühendisliği ve Seçimi**
 * 5.1. Kategorik Özelliklerin İşlenmesi (One-Hot Encoding)
 * 5.2. Yüksek Kardinaliteli Kategorik Özelliklerin İşlenmesi
 * 5.3. Eksik Değerlerin ve Gereksiz Sütunların Son Kez İşlenmesi
+
+*Bu adımda, modellemeye uygun hale getirmek için kategorik değişkenler one-hot encoding yöntemiyle sayısal forma dönüştürüldü. Yüksek benzersiz değer içeren değişkenlerde anlamlı gruplamalar yapılarak veri boyutu kontrol altında tutuldu. Ayrıca, eksik değerler son kez gözden geçirilip uygun şekilde temizlendi ve modellemeye katkı sağlamayan sütunlar veri setinden çıkarıldı.*
+
 * **6. ADIM: Model Eğitimi ve Değerlendirilmesi**
 * 6.1.Veri Setinin Test-Train Bölünmesi 
 * 6.2.Random Forest Regressor Modeli ile Eğitilmesi ve Temel Değerlendirmesi
 * 6.3.Hiperparametre Optimizasyonu 
 * 6.4. Model değerlendirme 
 
+*Bu adımda, veri seti eğitim ve test olarak 80/20 oranında bölündü. Random Forest Regressor modeli ile temel bir eğitim gerçekleştirildi ve performans metrikleri hesaplandı. Ardından RandomizedSearchCV yöntemiyle hiperparametre optimizasyonu yapılarak modelin başarısı artırıldı. Son olarak optimize edilen model MAE, MSE, RMSE ve R² skorları ile değerlendirildi.*
