@@ -1,4 +1,4 @@
-# ML_Project_magnitude_prediction
+# ML_Project_Magnitude_Prediction_Ceren_Şahan
 
 # Giriş 
   Projemde gözetimli öğrenme tekniklerinden girdi özelliklerine göre sürekli değer tahmin etme yani bir regresyon problemi çalışmak istiyordum. Bu nedenle amacıma ve veri seti seçim kurallarına uygun olacak şekilde makine öğrenmesini daha temelden ve sindirerek öğrenmek için bu projeyi geliştirmeye karar verdim. 
@@ -10,7 +10,7 @@ Bu projenin temel amacı, 2010-2023 yılları arasında meydana gelen küresel d
 
 **_Veri Seti ve Seçim Sebepleri_**
 
-Kaggle platformundan seçilen 2010-2023 yıllarında kaydedilen depremleri içeren (Earthquake Data 2010-2023 Latest) veri seti, yaklaşık 243.000 satır ve 22 sütundan oluşmaktadır. Bu veri setinde her bir satır meydana gelen bir depremi temsil etmektedir. Sütunlar ise depreme ait çeşitli özellikleri bize vermektedir.
+Kaggle platformundan seçilen 2010-2023 yıllarında kaydedilen depremleri içeren *(Earthquake Data 2010-2023 Latest)* veri seti, yaklaşık 243.000 satır ve 22 sütundan oluşmaktadır. Bu veri setinde her bir satır meydana gelen bir depremi temsil etmektedir. Sütunlar ise depreme ait çeşitli özellikleri bize vermektedir.
 
 Veri setinin gerçek dünya verisi olması, bilimsel olarak anlamlı ve güncel olması, proje kurallarına göre yeterli büyüklükte olması ve regresyon problemine uygun olması bu veri setini seçme sebeplerimdir.
 
@@ -79,7 +79,7 @@ Veri setinin gerçek dünya verisi olması, bilimsel olarak anlamlı ve güncel 
 
 # Metrikler
 
-Random Forest modelinin optimize önesi ve sonrası metriklerinin karşılaştırılması:
+Random Forest modelinin optimize önesi ve RandomizedSearchCV ile optimize sonrası metriklerinin karşılaştırılması:
 | Metrik   | Optimize Edilmeden | Optimize Edildikten Sonra | Değişim  | Yorumu                      |
 | -------- | ------------------ | ------------------------- | -------- | --------------------------- |
 | *RMSE* | 0.1973             | 0.1963                    | ↓ 0.0010 | Hata biraz azaldı           |
@@ -88,7 +88,41 @@ Random Forest modelinin optimize önesi ve sonrası metriklerinin karşılaştı
 | *R²*   | 0.9058             | 0.9068                    | ↑ 0.0010 | Modelin açıklama gücü arttı |
 
 * Optimize sonrasında modelin hataları hafifçe azaldı ve R2 skoru yani modelin doğru tahmin edebilme oranı yükseldi.
-* Model optimize öncesinde de iyi bir performans gösteriyordu. Ancak optimize sonrası artık deprem büyüklüğü değerlerindeki değişimin %90.68 ni açıklayabiliyor. Yani gerçek deprem büyüklüklerine çok yakın sonuçlar üretiyor ve daha büyük ölçüde doğru tahmin ediyor. Optimize soncunda küçük ama pozitif bir iyileşme olmuştur. Modelin açıklayıcığı arttı ve daha dengeli hale geldi.
+* Model optimize öncesinde de iyi bir performans gösteriyordu. Ancak optimize sonrası artık deprem büyüklüğü değerlerindeki değişimin %90.68 ni açıklayabiliyor. Yani gerçek deprem büyüklüklerine çok yakın sonuçlar üretiyor ve daha büyük ölçüde doğru tahmin ediyor. Optimize soncunda küçük ama pozitif bir iyileşme olmuştur. Modelin açıklayıcığı arttı ve daha dengeli, kararlı,güvenilir hale geldi.
+
+# Sonuç ve Gelecek Çalışmalar
+
+## Sonuçlar
+Bu projenin amacı; 2010-2023 yılları arasında meydana gelen küresel deprem verilerini kullanarak, depremin büyüklüğünü (magnitude), çeşitli özelliklere (örneğin derinlik, konum, sismik istasyon sayısı vb.) göre tahmin edebilen bir makine öğrenmesi modeli geliştirmekti.Modelleme sürecinde **Random Forest Regressor** algoritması kullanıldı. RandomizedSearchCV ile hiperparametre optimizasyonu yapıldı ve modelin deprem büyüklüklerini genel olarak başarılı bir şekilde tahmin edebildiği görüldü. 
+
+`Modelin güçlü yönleri`: Modelin iyi performans göstermesinin yanında, Random Forest sayesinde aşırı ezberlemeye dayanıklı ve karmaşık ilişklileri öğrenme de başarılı bir model ortaya çıkarılmıştır.
+
+`Modelin sınırlı yönleri`: 
+
+ 
+
+## Gelecek Çalışmalar
+*Proje İçin Gelecek Çalışmalar*
+
+* `place` gibi yüksek benzersiz değer içerern sütunlar için gelişmiş encoding yöntemleri denenebilir.
+* Farklı hiperparametre optimizaysonları da gerçekleştirilebilir. (Optuna, GridSearchCV)
+* Veri seti genişletilebilir veya mümkünse anlık veri akışı sağlanabilir.
+* Aynı veri setiyle gözetimsiz öğrenme gerçekleştirilebilir.
+* Web arayüzü ile deploy edilebilir. Kullanıcı dostu bir arayüz geliştirilebilir.
+* Veri setine yeni özellikler dahil edilebilr ve modelin daha doğru tahminler yapması sağlanabilir.
+
+*Kendi ML Sürecim İçin Gelecek Çalışmalar*
+Bu proje, makine öğrenmesi alanında ilk uygulamalarımdan biridir. İleride daha ileri düzey projeler geliştirerek özellikle afet teknolojileri, sürdürülebilir yaşam ve veri bilimi alanlarında uzmanlaşmak istiyorum. Bu süreçte Python, veri mühendisliği, API entegrasyonu ve yapay zekâ uygulamaları gibi teknolojilere olan ilgimi derinleştirmeyi hedefliyorum.
+
+
+# Linkler
+Veri Seti: https://www.kaggle.com/datasets/rushikesh6548/earthquake-data-2010-2023-latest 
+
+Kaggle Notebook:
+
+# Dipnot
+Bu projeyi geliştirirken makine öğrenmesi süreçlerini daha iyi anlamak amacıyla Google Gemini yapay zekâ asistanından rehberlik için destek aldım. Yapay zekâdan aldığım yardım; her adımın mantığını öğrenmemi, veri analizi ve modelleme sürecini daha iyi kavramamı sağladı. Projede tüm kararları kendim verdim, yorumladım ve uygulamaları bizzat gerçekleştirdim. Yapay zekâ desteğini öğrenme sürecimi güçlendiren bir kaynak olarak kullandım. Etik kurallara uygun bir çalışma olması açısından dipnotta bu desteği açıklamak istedim.
+
 
 
 
