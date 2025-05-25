@@ -97,7 +97,11 @@ Bu projenin amacı; 2010-2023 yılları arasında meydana gelen küresel deprem 
 
 `Modelin güçlü yönleri`: Modelin iyi performans göstermesinin yanında, Random Forest sayesinde aşırı ezberlemeye dayanıklı ve karmaşık ilişklileri öğrenme de başarılı bir model ortaya çıkarılmıştır.
 
-`Modelin sınırlı yönleri`: 
+`Modelin sınırlı yönleri`: Çok büyük veya çok küçük deprem büyüklüklerinde modelin tahminleri gerçek değerleden sapabilmiştir. Ağaç modellerinin çoğunluğu uç örnekleri az sayıda gördüğü için uç değerleri öğrenmelte ortalamaya meyilli olmuştur. Bununla birlikte Random FOrest eğitimi yavaştır ve veri setinin büyümesi durumunda hız için düzenlemeler yapılmasına gerek duymaktadır.
+
+**_Gerçek Dünyada Model Ne İşe Yarayabilir?_**
+
+
 
  
 
