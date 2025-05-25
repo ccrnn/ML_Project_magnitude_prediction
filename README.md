@@ -42,7 +42,7 @@ Veri setinin gerçek dünya verisi olması, bilimsel olarak anlamlı ve güncel 
 * 4.4.Sayısal Özellikler Arası Korelasyon Analizi
 * 4.5.Kategorik Özelliklerin Analizi
 
-* Bu adımda, hedef değişken olan `mag` (deprem büyüklüğü) dağılımı incelendi ve coğrafi konumlara göre dünya haritası üzerinde görselleştirildi. Zaman bazlı özellikler (yıl, ay, saat) ile büyüklük arasındaki ilişkiler analiz edildi. Sayısal değişkenler arası korelasyon matrisiyle ilişkiler belirlendi. Son olarak kategorik değişkenlerin `mag` üzerindeki etkileri incelenerek veri yapısı daha iyi anlaşıldı.
+*Bu adımda, hedef değişken olan `mag` (deprem büyüklüğü) dağılımı incelendi ve coğrafi konumlara göre dünya haritası üzerinde görselleştirildi. Zaman bazlı özellikler (yıl, ay, saat) ile büyüklük arasındaki ilişkiler analiz edildi. Sayısal değişkenler arası korelasyon matrisiyle ilişkiler belirlendi. Son olarak kategorik değişkenlerin `mag` üzerindeki etkileri incelenerek veri yapısı daha iyi anlaşıldı.*
 
 * **5. ADIM: Özellik Mühendisliği ve Seçimi**
 * 5.1. Kategorik Özelliklerin İşlenmesi (One-Hot Encoding)
@@ -58,3 +58,18 @@ Veri setinin gerçek dünya verisi olması, bilimsel olarak anlamlı ve güncel 
 * 6.4. Model değerlendirme 
 
 *Bu adımda, veri seti eğitim ve test olarak 80/20 oranında bölündü. Random Forest Regressor modeli ile temel bir eğitim gerçekleştirildi ve performans metrikleri hesaplandı. Ardından RandomizedSearchCV yöntemiyle hiperparametre optimizasyonu yapılarak modelin başarısı artırıldı. Son olarak optimize edilen model MAE, MSE, RMSE ve R² skorları ile değerlendirildi.*
+
+**Model Seçim Aşaması**
+4 farklı model test edilmiştir. Bunlar; Linear Regression, Decision Tree, LightGBM ve Random Forest. Daha sonra modellerin performans metrikleri değerlendirilmişitr. Ayrıca çapraz doğrulama da uygulanmıştır. 
+
+
+
+
+(5Fold CV) Çapraz doğrulama sonucu RMSE değerleri şu şekildedir: Linear Regression: 0.2929, Decision Tree:0.3203, LightGBM:0.2360 ve Random Forest:0.2292. En düşük RMSE değeri Random Forest Regressor’a aittir. 
+Sonuç olarak performans açısından en başırılı model Random Forest olmuştur ve projeye onunla devam edilmiştir.
+
+|   | Fiyat   | Adet  |
+| --|:-------:| -----:|
+| A | 1000TL  | 1     |
+| B | 100TL   | 10    |
+| C | 1TL     | 1000  |
