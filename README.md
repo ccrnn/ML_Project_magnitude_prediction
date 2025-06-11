@@ -116,10 +116,6 @@ Model, geçmiş verilerden yola çıkarak deprem büyüklüğü tahmini yapabilm
 * Web arayüzü ile deploy edilebilir. Kullanıcı dostu bir arayüz geliştirilebilir.
 * Veri setine yeni özellikler dahil edilebilr ve modelin daha doğru tahminler yapması sağlanabilir.
 
-*Kendi ML Sürecim İçin Gelecek Çalışmalar*
-
-Bu proje, makine öğrenmesi alanında ilk uygulamalarımdan biridir. Bir fen bilgisi öğretmeni olarak eğitimde yapay zeka ve makine öğrenmesi gibi alanların giderek önem kazandığının farkındayım. Bu nedenle gerek yüksek lisans sürecimde gerekse de öğretmenlik hayatımda bu teknolojiler üzerinde teknik bilgi kazanmakla birlikte bu teknolojilerin eğitimde nasıl kullanılabileceğini anlamaya çalışıyorum. Çünkü gelecekte bu teknolojiler iş dünyasından gündelik hayat kadar bir çok noktada etkili olacak ve bu dünyaya hazırlanacak bireylerin yetiştirilmesinde ise öğretmenlerin rolü son derece kritiktir. Öğretmenlerin, öğrencilerini yalnızca mevcut bilgiyle değil, aynı zamanda geleceğin teknolojileriyle de donatabilmesi için bu sistemleri anlaması ve mümkünse eğitim süreçlerine entegre edebilmesi gerektiğini düşünüyorum. İleride daha ileri düzey projeler geliştirerek özellikle kişiselleşitirilmiş eğitim araçları; öğrenme stili veya konu başlı başarı tahmini gibi eğitimle teknolojinin buluştuğu alanlarda uzmanlaşmak istiyorum. Bu bootcamp sürecinde makine öğrenmesi, derin öğrenme ve veri mühendisliği ve yapay zekâ uygulamaları gibi teknolojilere olan ilgim daha da derinleşti. Çalışmalarıma bu alanda devam ederek hem teknik bilgimi geliştirmeyi hem de bu teknolojileri eğitim ortamlarına entegre edebilecek yenilikçi çözümler üretmeyi hedefliyorum.
-
 
 # Linkler
 Veri Seti: https://www.kaggle.com/datasets/rushikesh6548/earthquake-data-2010-2023-latest 
